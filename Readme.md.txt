@@ -1,1 +1,1 @@
-hz scho napysaty
+hz scho meni napysaty
