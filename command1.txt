@@ -31,3 +31,121 @@ remote:
 To https://github.com/RomanKozakk/1.0.git
  * [new branch]      network_part_2 -> network_part_2
 
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ pwd
+/c/Users/User/Desktop/aws
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ^C
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ .ssh % ssh -i /c/Users/User/Desktop/aws ec2-user@3.72.250.126
+bash: .ssh: command not found
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh -i /c/Users/User/Desktop/aws ec2-user@3.72.250.126
+The authenticity of host '3.72.250.126 (3.72.250.126)' can't be established.
+ED25519 key fingerprint is SHA256:7cuEX82tp5EO6Q7SCqu4QT9Mfzi/Dgaga+Tgjltd1Jk.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ls - la
+ls: cannot access '-': No such file or directory
+ls: cannot access 'la': No such file or directory
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh-add ~/.ssh/aws
+Could not open a connection to your authentication agent.
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh-add /c/Users/User/Desktop/aws
+Could not open a connection to your authentication agent.
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ls -la
+total 12
+drwxr-xr-x 1 User 197121    0 Aug  2 10:33 ./
+drwxr-xr-x 1 User 197121    0 Aug  2 10:33 ../
+-rw-r--r-- 1 User 197121 3389 Aug  2 10:27 aws
+-rw-r--r-- 1 User 197121  746 Aug  2 10:27 aws.pub
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh -i /c/Users/User/Desktop/aws/aws ec2-user@3.72.250.126
+The authenticity of host '3.72.250.126 (3.72.250.126)' can't be established.
+ED25519 key fingerprint is SHA256:7cuEX82tp5EO6Q7SCqu4QT9Mfzi/Dgaga+Tgjltd1Jk.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '3.72.250.126' (ED25519) to the list of known hosts.
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.1.20230725:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Tue Aug  1 17:30:08 2023
+“Loading /etc/profile”
+“Loading /etc/profile.d”
+[ec2-user@ip-10-0-21-166 ~]$
+[ec2-user@ip-10-0-21-166 ~]$ exit
+logout
+Connection to 3.72.250.126 closed.
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh -i /c/Users/User/Desktop/aws/aws -L 127.0.0.1:8888 ec2-user@3.72.250.126
+Bad local forwarding specification '127.0.0.1:8888'
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh -i /c/Users/User/Desktop/aws/aws -L 22:127.0.0.1:8888 ec2-user@3.72.250.126
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.1.20230725:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Thu Aug  3 16:32:52 2023 from 91.243.3.248
+“Loading /etc/profile”
+“Loading /etc/profile.d”
+[ec2-user@ip-10-0-21-166 ~]$ exit
+logout
+Connection to 3.72.250.126 closed.
+
+User@DESKTOP-58PH2EF MINGW64 ~/Desktop/awsUser@DESKTOP-58PH2EF MINGW64 ~/Desktop/aws
+$ ssh -i /c/Users/User/Desktop/aws/aws -L 8888:127.0.0.1:80 ec2-user@3.72.250.126
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.1.20230725:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Thu Aug  3 18:29:19 2023 from 91.243.3.248
+“Loading /etc/profile”
+“Loading /etc/profile.d”
+[ec2-user@ip-10-0-21-166 ~]$
+
