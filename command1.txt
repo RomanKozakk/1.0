@@ -1,0 +1,33 @@
+
+User@DESKTOP-58PH2EF MINGW64 /d/git/1.0 (dev)
+$ git checkout -b network_part_2
+Switched to a new branch 'network_part_2'
+
+User@DESKTOP-58PH2EF MINGW64 /d/git/1.0 (network_part_2)
+$ touch command1.txt
+
+User@DESKTOP-58PH2EF MINGW64 /d/git/1.0 (network_part_2)
+$ git add command1.txt
+
+User@DESKTOP-58PH2EF MINGW64 /d/git/1.0 (network_part_2)
+$ git status
+On branch network_part_2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command1.txt
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.0 (network_part_2)
+$ git push https://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@github.com/RomanKozakk/1.0.git
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (17/17), 1.47 KiB | 754.00 KiB/s, done.
+Total 17 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'network_part_2' on GitHub by visiting:
+remote:      https://github.com/RomanKozakk/1.0/pull/new/network_part_2
+remote:
+To https://github.com/RomanKozakk/1.0.git
+ * [new branch]      network_part_2 -> network_part_2
+
