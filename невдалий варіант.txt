@@ -1,0 +1,277 @@
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ vagant status
+bash: vagant: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ cd D:\study devops\1.2
+bash: cd: too many arguments
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ cd "D:\study devops\1.2"
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ vagrant status
+Current machine states:
+
+default                   running (virtualbox)
+
+The VM is running. To stop this VM, you can run `vagrant halt` to
+shut it down forcefully, or you can run `vagrant suspend` to simply       
+suspend the virtual machine. In either case, to restart it again,
+simply run `vagrant up`.
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ git --version
+git version 2.41.0.windows.3
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ nano --version
+ GNU nano, version 7.2
+ (C) 2023 the Free Software Foundation and various contributors
+ Compiled options: --enable-utf8     
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ curl --version
+curl 8.1.2 (x86_64-w64-mingw32) libcurl/8.1.2 Schannel zlib/1.2.13 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libpsl/0.21.2 (+libidn2/2.3.3) libssh2/1.11.0
+Release-Date: 2023-05-30
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp
+Features: alt-svc AsynchDNS brotli HSTS HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL SSPI threadsafe UnixSockets zstd
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ wget --version
+bash: wget: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ sudo yum install wget
+bash: sudo: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ sudo apt install wget
+bash: sudo: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ mc --version
+bash: mc: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ htop --version
+bash: htop: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ ncdu --version
+bash: ncdu: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ ansimble --version
+bash: ansimble: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ httpd -v
+bash: httpd: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ sudo apt-get install mc
+bash: sudo: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ sudo su
+bash: sudo: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ cd "root"
+bash: cd: root: No such file or directory
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ ls -la
+total 85
+drwxr-xr-x 1 User 197121     0 Aug  7 22:06 ./
+drwxr-xr-x 1 User 197121     0 Aug  7 21:23 ../
+drwxr-xr-x 1 User 197121     0 Aug  7 21:36 .vagran-rw-r--r-- 1 User 197121     0 Aug  7 22:05 456    
+-rw-r--r-- 1 User 197121 46769 Aug  7 21:38 ubuntu-bionic-18.04-cloudimg-console.log
+-rw-r--r-- 1 User 197121    80 Aug  7 21:35 Untitled-1.rb
+-rw-r--r-- 1 User 197121  3466 Aug  7 21:32 Vagrantfile
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2   
+$ sudo apt update
+bash: sudo: command not found
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ ping google.com
+
+Pinging google.com [172.217.16.46] with 32 bytes of data:
+Reply from 172.217.16.46: bytes=32 time=27ms TTL=117
+Reply from 172.217.16.46: bytes=32 time=26ms TTL=117
+Reply from 172.217.16.46: bytes=32 time=26ms TTL=117
+Reply from 172.217.16.46: bytes=32 time=26ms TTL=117
+
+Ping statistics for 172.217.16.46:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:     
+    Minimum = 26ms, Maximum = 27ms, Average = 26ms 
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2   
+$ /etc/apt/sources.list
+bash: /etc/apt/sources.list: No such file or directory
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2   
+$ cat /etc/apt/sources.list
+cat: /etc/apt/sources.list: No such file or directory
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2   
+$ ls /etc/apt/
+ls: cannot access '/etc/apt/': No such file or directory
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2   
+$ vagrant ssh
+Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 4.15.0-212-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com 
+ * Support:        https://ubuntu.com/advantage    
+
+  System information as of Mon Aug  7 20:01:19 UTC 2023
+
+  System load:  0.0               Processes:             94
+  Usage of /:   2.9% of 38.70GB   Users logged in:       0
+  Memory usage: 13%               IP address for enp0s3: 10.0.2.15
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Infrastructure is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Infra to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status 
+
+New release '20.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+vagrant@ubuntu-bionic:~$ cd /etc/apt/
+vagrant@ubuntu-bionic:/etc/apt$
+vagrant@ubuntu-bionic:/etc/apt$ ls
+apt.conf.d   preferences.d  sources.list.d
+auth.conf.d  sources.list   trusted.gpg.d
+vagrant@ubuntu-bionic:/etc/apt$ cat cat /etc/apt/sources.list
+cat: cat: No such file or directory
+## Note, this file is written by cloud-init on first boot of an instance
+## modifications made here will not survive a re-bundle.
+## if you wish to make changes you can:
+## a.) add 'apt_preserve_sources_list: true' to /etc/cloud/cloud.cfg
+##     or do the same in user-data
+## b.) add sources in /etc/apt/sources.list.d      
+## c.) make changes to template file /etc/cloud/templates/sources.list.tmpl
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://archive.ubuntu.com/ubuntu bionic main restricted
+# deb-src http://archive.ubuntu.com/ubuntu bionic main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted
+# deb-src http://archive.ubuntu.com/ubuntu bionic-updates main restricted
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://archive.ubuntu.com/ubuntu bionic universe
+# deb-src http://archive.ubuntu.com/ubuntu bionic universe
+deb http://archive.ubuntu.com/ubuntu bionic-updates universe
+# deb-src http://archive.ubuntu.com/ubuntu bionic-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://archive.ubuntu.com/ubuntu bionic multiverse
+# deb-src http://archive.ubuntu.com/ubuntu bionic multiverse
+deb http://archive.ubuntu.com/ubuntu bionic-updates multiverse
+# deb-src http://archive.ubuntu.com/ubuntu bionic-updates multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.       
+deb http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse
+# deb-src http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse       
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu bionic partner
+# deb-src http://archive.canonical.com/ubuntu bionic partner
+
+deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+# deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu bionic-security universe
+# deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+vagrant@ubuntu-bionic:/etc/apt$ cat /etc/apt/sources.list
+## Note, this file is written by cloud-init on first boot of an instance
+## modifications made here will not survive a re-bundle.
+## if you wish to make changes you can:
+## a.) add 'apt_preserve_sources_list: true' to /etc/cloud/cloud.cfg
+##     or do the same in user-data
+## b.) add sources in /etc/apt/sources.list.d      
+## c.) make changes to template file /etc/cloud/templates/sources.list.tmpl
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://archive.ubuntu.com/ubuntu bionic main restricted
+# deb-src http://archive.ubuntu.com/ubuntu bionic main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted
+# deb-src http://archive.ubuntu.com/ubuntu bionic-updates main restricted
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://archive.ubuntu.com/ubuntu bionic universe
+# deb-src http://archive.ubuntu.com/ubuntu bionic universe
+deb http://archive.ubuntu.com/ubuntu bionic-updates universe
+# deb-src http://archive.ubuntu.com/ubuntu bionic-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://archive.ubuntu.com/ubuntu bionic multiverse
+# deb-src http://archive.ubuntu.com/ubuntu bionic multiverse
+deb http://archive.ubuntu.com/ubuntu bionic-updates multiverse
+# deb-src http://archive.ubuntu.com/ubuntu bionic-updates multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.       
+deb http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse
+# deb-src http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse       
+
+## Uncomment the following two lines to add software from Canonical's
+deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+# deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu bionic-security universe
+# deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+vagrant@ubuntu-bionic:/etc/apt$ exit
+logout
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$ vagrant destroy
+    default: Are you sure you want to destroy the 'default' VM? [y/N] y
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+
+User@DESKTOP-58PH2EF MINGW64 /d/study devops/1.2
+$

@@ -1,0 +1,129 @@
+
+PS C:\Users\User> docker exec -it some-postgres psql -U postgres
+psql (13.12 (Debian 13.12-1.pgdg120+1))
+Type "help" for help.
+
+postgres=# CREATE DATABASE itca;
+CREATE DATABASE
+postgres=# \l
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privil
+eges
+-----------+----------+----------+------------+------------+----------------
+-------
+ itca      | postgres | UTF8     | en_US.utf8 | en_US.utf8 |
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 |
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres
+      +
+           |          |          |            |            | postgres=CTc/po
+stgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres
+      +
+           |          |          |            |            | postgres=CTc/po
+stgres
+(4 rows)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+postgres=# CREATE USER student WITH SUPERUSER PASSWORD '2444666666';
+CREATE ROLE
+postgres=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Me
+mber of
+-----------+------------------------------------------------------------+---
+--------
+ postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ student   | Superuser                                                  | {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+postgres=# docker exec -it some-postgres psql -U postgres -d itca
+postgres-# CREATE SCHEMA devops4;
+ERROR:  syntax error at or near "docker"
+LINE 1: docker exec -it some-postgres psql -U postgres -d itca
+        ^
+postgres=# CREATE SCHEMA devops5;
+CREATE SCHEMA
+postgres=# CREATE TABLE devops4.users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255)
+);
+
+INSERT INTO devops4.users (name, email) VALUES
+    ('богдан', 'bogdan@gmail.com'),
+    ('іван', 'ivan@gmail.com');
+ERROR:  schema "devops4" does not exist
+LINE 1: CREATE TABLE devops4.users (
+                     ^
+ERROR:  relation "devops4.users" does not exist
+LINE 1: INSERT INTO devops4.users (name, email) VALUES
+                    ^
+postgres=# CREATE TABLE devops5.users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255)
+);
+
+INSERT INTO devops5.users (name, email) VALUES
+    ('богдан', 'bogdan@gmail.com'),
+    ('іван', 'ivan@gmail.com');
+CREATE TABLE
+INSERT 0 2
+postgres=# SELECT * FROM devops5.users;
+ id |  name  |      email
+----+--------+------------------
+  1 | богдан | bogdan@gmail.com
+  2 | іван   | ivan@gmail.com
+(2 rows)
+
+postgres=#
